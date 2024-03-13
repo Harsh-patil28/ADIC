@@ -1,0 +1,283 @@
+hal(64): 15.20-s086: (c) Copyright 1995-2020 Cadence Design Systems, Inc.
+hal: Options:   -cdslib /home/student/02fe21bec035/cds.lib -logfile hal.log worklib.counter_test:module.
+hal: Snapshot:  worklib.counter_test:module.
+hal: Workspace: /home/student/02fe21bec035.
+hal: Date: Sat Mar 02 08:36:51 IST 2024.
+
+hal: Running on elaborated SNAPSHOT.....
+
+  ==========================================================================
+Performing lint checks 
+
+halcheck(64): 15.20-s086: (c) Copyright 1995-2020 Cadence Design Systems, Inc.
+visadev(64): 15.20-s086: (c) Copyright 1995-2020 Cadence Design Systems, Inc.
+`timescale 1ns/1ps 
+|
+halcheck: *N,CDNOTE (./Demo/demo_tst.v,1|0): The compiler directive '`timescale' is used in the RTL.
+module counter_test; 
+|
+halcheck: *W,DIFFMN (./Demo/demo_tst.v,2|0): Module name 'counter_test' differs from file name 'demo_tst.v'.
+module counter_test; 
+|
+halcheck: *W,NEEDIO (./Demo/demo_tst.v,2|0): Top-level module 'counter_test' has no inputs/outputs/inouts.
+counter counter1(clk,m,rst, count); 
+|
+halcheck: *W,CBYNAM (./Demo/demo_tst.v,19|0): Port connections for instance 'counter1' of module 'counter' should be made by name rather than by positional ordered list.
+wire [3:0] count; 
+|
+halcheck: *W,STYVAL (./Demo/demo_tst.v,4|0): Numeric value '3' used for identifier 'count'. Use constants to avoid portability issues.
+begin
+|
+halcheck: *W,NOBLKN (./Demo/demo_tst.v,6|0): Each block should be labeled with a meaningful name.
+clk=0; 
+|
+halcheck: *W,IMPDTC (./Demo/demo_tst.v,7|0): Expression '0' implicitly converted to type 'unsigned' from type 'signed' in module/design-unit counter_test.
+clk=0; 
+|
+halcheck: *W,INTTOB (./Demo/demo_tst.v,7|0): Assigning a 0 or 1 (32 bits) to a single-bit variable in module/design-unit counter_test.
+clk=0; 
+|
+halcheck: *W,TRUNCZ (./Demo/demo_tst.v,7|0): Truncation in constant conversion without a loss of bits in module/design-unit counter_test.
+clk=0; 
+|
+halcheck: *W,REVROP (./Demo/demo_tst.v,7|0): Register 'clk' is being read/assigned outside the process in which it was assigned using a blocking assignment.
+halcheck: (./Demo/demo_tst.v,20): Assigned using blocking assignment in this process.
+rst=0;#25; 
+|
+halcheck: *W,IMPDTC (./Demo/demo_tst.v,8|0): Expression '0' implicitly converted to type 'unsigned' from type 'signed' in module/design-unit counter_test.
+rst=0;#25; 
+|
+halcheck: *W,INTTOB (./Demo/demo_tst.v,8|0): Assigning a 0 or 1 (32 bits) to a single-bit variable in module/design-unit counter_test.
+rst=0;#25; 
+|
+halcheck: *W,TRUNCZ (./Demo/demo_tst.v,8|0): Truncation in constant conversion without a loss of bits in module/design-unit counter_test.
+rst=0;#25; 
+|
+halcheck: *W,EMPSTM (./Demo/demo_tst.v,8|0): Module 'counter_test' contains an empty statement.
+rst=1; 
+|
+halcheck: *W,IMPDTC (./Demo/demo_tst.v,9|0): Expression '1' implicitly converted to type 'unsigned' from type 'signed' in module/design-unit counter_test.
+rst=1; 
+|
+halcheck: *W,INTTOB (./Demo/demo_tst.v,9|0): Assigning a 0 or 1 (32 bits) to a single-bit variable in module/design-unit counter_test.
+rst=1; 
+|
+halcheck: *W,TRUNCZ (./Demo/demo_tst.v,9|0): Truncation in constant conversion without a loss of bits in module/design-unit counter_test.
+begin
+|
+halcheck: *W,NOBLKN (./Demo/demo_tst.v,12|0): Each block should be labeled with a meaningful name.
+m=1; 
+|
+halcheck: *W,IMPDTC (./Demo/demo_tst.v,13|0): Expression '1' implicitly converted to type 'unsigned' from type 'signed' in module/design-unit counter_test.
+m=1; 
+|
+halcheck: *W,INTTOB (./Demo/demo_tst.v,13|0): Assigning a 0 or 1 (32 bits) to a single-bit variable in module/design-unit counter_test.
+m=1; 
+|
+halcheck: *W,TRUNCZ (./Demo/demo_tst.v,13|0): Truncation in constant conversion without a loss of bits in module/design-unit counter_test.
+#600 m=0; 
+|
+halcheck: *W,IMPDTC (./Demo/demo_tst.v,14|0): Expression '0' implicitly converted to type 'unsigned' from type 'signed' in module/design-unit counter_test.
+#600 m=0; 
+|
+halcheck: *W,INTTOB (./Demo/demo_tst.v,14|0): Assigning a 0 or 1 (32 bits) to a single-bit variable in module/design-unit counter_test.
+#600 m=0; 
+|
+halcheck: *W,TRUNCZ (./Demo/demo_tst.v,14|0): Truncation in constant conversion without a loss of bits in module/design-unit counter_test.
+rst=0;#25;
+|
+halcheck: *W,IMPDTC (./Demo/demo_tst.v,15|0): Expression '0' implicitly converted to type 'unsigned' from type 'signed' in module/design-unit counter_test.
+rst=0;#25;
+|
+halcheck: *W,INTTOB (./Demo/demo_tst.v,15|0): Assigning a 0 or 1 (32 bits) to a single-bit variable in module/design-unit counter_test.
+rst=0;#25;
+|
+halcheck: *W,TRUNCZ (./Demo/demo_tst.v,15|0): Truncation in constant conversion without a loss of bits in module/design-unit counter_test.
+rst=0;#25;
+|
+halcheck: *W,EMPSTM (./Demo/demo_tst.v,15|0): Module 'counter_test' contains an empty statement.
+rst=1;
+|
+halcheck: *W,IMPDTC (./Demo/demo_tst.v,16|0): Expression '1' implicitly converted to type 'unsigned' from type 'signed' in module/design-unit counter_test.
+rst=1;
+|
+halcheck: *W,INTTOB (./Demo/demo_tst.v,16|0): Assigning a 0 or 1 (32 bits) to a single-bit variable in module/design-unit counter_test.
+rst=1;
+|
+halcheck: *W,TRUNCZ (./Demo/demo_tst.v,16|0): Truncation in constant conversion without a loss of bits in module/design-unit counter_test.
+#500 m=0;
+|
+halcheck: *W,IMPDTC (./Demo/demo_tst.v,17|0): Expression '0' implicitly converted to type 'unsigned' from type 'signed' in module/design-unit counter_test.
+#500 m=0;
+|
+halcheck: *W,INTTOB (./Demo/demo_tst.v,17|0): Assigning a 0 or 1 (32 bits) to a single-bit variable in module/design-unit counter_test.
+#500 m=0;
+|
+halcheck: *W,TRUNCZ (./Demo/demo_tst.v,17|0): Truncation in constant conversion without a loss of bits in module/design-unit counter_test.
+always #5 clk=~clk; 
+|
+halcheck: *W,NBGEND (./Demo/demo_tst.v,20|0): Missing begin/end statement in the 'always' block.
+always #5 clk=~clk; 
+|
+halcheck: *W,EVTRIG (./Demo/demo_tst.v,20|0): Always block with no event trigger at the start of the block in module 'counter_test'.
+always #5 clk=~clk; 
+|
+halcheck: *W,SEPLIN (./Demo/demo_tst.v,20|0): Use a separate line for each HDL statement.
+always #5 clk=~clk; 
+|
+halcheck: *W,RDBFAS (./Demo/demo_tst.v,20|0): Register 'clk', assigned using blocking assignment, is being read before getting assigned.
+$finish; 
+|
+halcheck: *W,BADSYS (./Demo/demo_tst.v,23|0): System task $finish in module 'counter_test' is ignored.
+`timescale 1ns/1ps 
+|
+halcheck: *N,CDNOTE (./Demo/demo.v,1|0): The compiler directive '`timescale' is used in the RTL.
+module counter(clk,rst,m,count);
+|
+halcheck: *W,DIFFMN (./Demo/demo.v,2|0): Module name 'counter' differs from file name 'demo.v'.
+module counter(clk,rst,m,count);
+|
+halcheck: *N,PRTCNT (./Demo/demo.v,2|0): Module/Entity 'counter' contains '4' ports.
+halcheck: (./Demo/demo.v,2): Number of Input ports: 3.
+halcheck: (./Demo/demo.v,2): Number of Output ports: 1.
+input clk,rst,m;
+|
+halcheck: *N,DECLIN (./Demo/demo.v,3|0): Use a separate line for each HDL declaration.
+output reg[3:0]count;
+|
+halcheck: *W,STYVAL (./Demo/demo.v,4|0): Numeric value '3' used for identifier 'count'. Use constants to avoid portability issues.
+begin
+|
+halcheck: *W,NOBLKN (./Demo/demo.v,6|0): Each block should be labeled with a meaningful name.
+if(!rst)
+|
+halcheck: *W,NBGEND (./Demo/demo.v,7|0): Missing begin/end statement in the 'if' block.
+count = 0;
+|
+halcheck: *W,IMPDTC (./Demo/demo.v,8|0): Expression '0' implicitly converted to type 'unsigned' from type 'signed' in module/design-unit counter1.
+count = 0;
+|
+halcheck: *W,BLKSQB (./Demo/demo.v,8|0): Blocking assignment encountered in a sequential block.
+count = 0;
+|
+halcheck: *W,TRUNCZ (./Demo/demo.v,8|0): Truncation in constant conversion without a loss of bits in module/design-unit counter1.
+if(m)
+|
+halcheck: *W,NBGEND (./Demo/demo.v,9|0): Missing begin/end statement in the 'if' block.
+count=count+1;
+|
+halcheck: *W,IMPTYP (./Demo/demo.v,10|0): Expression 'count + 1' implicitly converted to type 'register' from type 'integer'.
+count=count+1;
+|
+halcheck: *W,BLKSQB (./Demo/demo.v,10|0): Blocking assignment encountered in a sequential block.
+count=count+1;
+|
+halcheck: *W,POIASG (./Demo/demo.v,10|0): The result of addition operation may lead to a potential overflow in module/design-unit counter1.
+halcheck: (./Demo/demo.v,10): LHS operand 'count' is 4 bit(s), RHS operand 'count + 1' is 32 bit(s).
+halcheck: (./Demo/demo.v,10): Increase the size of LHS by 28 bit(s).
+count=count+1;
+|
+halcheck: *W,RDBFAS (./Demo/demo.v,10|0): Register 'count', assigned using blocking assignment, is being read before getting assigned.
+count=count+1;
+|
+halcheck: *W,UELOPR (./Demo/demo.v,10|0): Unequal length operand in bit/arithmetic operator PLUS in module/design-unit counter1.
+halcheck: (./Demo/demo.v,10): LHS operand 'count' is 4 bits, RHS operand '1' is 32 bits.
+count=count-1;
+|
+halcheck: *W,IMPTYP (./Demo/demo.v,12|0): Expression 'count - 1' implicitly converted to type 'register' from type 'integer'.
+count=count-1;
+|
+halcheck: *W,BLKSQB (./Demo/demo.v,12|0): Blocking assignment encountered in a sequential block.
+count=count-1;
+|
+halcheck: *W,POIASG (./Demo/demo.v,12|0): The result of subtraction operation may lead to a potential overflow in module/design-unit counter1.
+halcheck: (./Demo/demo.v,12): LHS operand 'count' is 4 bit(s), RHS operand 'count - 1' is 32 bit(s).
+halcheck: (./Demo/demo.v,12): Increase the size of LHS by 28 bit(s).
+count=count-1;
+|
+halcheck: *W,RDBFAS (./Demo/demo.v,12|0): Register 'count', assigned using blocking assignment, is being read before getting assigned.
+count=count-1;
+|
+halcheck: *W,UELOPR (./Demo/demo.v,12|0): Unequal length operand in bit/arithmetic operator MINUS in module/design-unit counter1.
+halcheck: (./Demo/demo.v,12): LHS operand 'count' is 4 bits, RHS operand '1' is 32 bits.
+if(!rst)
+|
+halcheck: *N,ALOWID (./Demo/demo.v,7|0): Signal/variable name 'rst' does not follow the active-low naming convention : should end with '_n'.
+if(m)
+|
+halcheck: *W,MICAWS (./Demo/demo.v,9|0): Multiple if/case statements present in a single always construct.
+wire [3:0] count; 
+|
+halcheck: *W,URDWIR (./Demo/demo_tst.v,4|0): Wire 'count' defined in module 'counter_test' does not drive any object, but is assigned at least once.
+halcheck: Total errors   = 0.
+halcheck: Total warnings = 58.
+
+  ==========================================================================
+Performing synthesizability checks 
+
+cfe64: 15.20.s086..-(): (c) Copyright 1995 - 2020 Cadence Design Systems, Inc.
+cfe64 Build : Mon Dec  7 22:53:08 IST 2020 ldvopt223
+halsynth: Loading design snapshot....
+halsynth: Traversing design hierarchy....
+output reg[3:0]count;
+|
+halsynth: *W,MULBAS (./Demo/demo.v,4|0): In module 'counter', register 'count' has multiple blocking assignments.
+count = 0;
+|
+halsynth: (./Demo/demo.v,8|0): Source HDL information for the error/warning mentioned above.
+count=count+1;
+|
+halsynth: (./Demo/demo.v,10|0): Source HDL information for the error/warning mentioned above.
+count=count-1;
+|
+halsynth: (./Demo/demo.v,12|0): Source HDL information for the error/warning mentioned above.
+if(m)
+|
+halsynth: *E,CLKENF (./Demo/demo.v,9|0): A conditional check is expected for all edge sensitive nodes except clock.
+initial
+|
+halsynth: *W,INIUSP (./Demo/demo_tst.v,5|0): Module counter_test has an initial block or a variable declaration assignment, which is ignored by synthesis tools.
+initial
+|
+halsynth: *W,INIUSP (./Demo/demo_tst.v,11|0): Module counter_test has an initial block or a variable declaration assignment, which is ignored by synthesis tools.
+always #5 clk=~clk; 
+|
+halsynth: *E,AWNDEL (./Demo/demo_tst.v,20|0): Always block with no event trigger at the start in module counter_test.
+initial
+|
+halsynth: *W,INIUSP (./Demo/demo_tst.v,21|0): Module counter_test has an initial block or a variable declaration assignment, which is ignored by synthesis tools.
+halsynth: *W,COMBLP: In module counter_test, combinational loop detected for node clk.
+always #5 clk=~clk; 
+|
+halsynth: (./Demo/demo_tst.v,20|0): Source HDL information for the error/warning mentioned above.
+always #5 clk=~clk; 
+|
+halsynth: *W,IGNDLY (./Demo/demo_tst.v,20|0): Lumped delay in module 'counter_test' is ignored.
+halsynth: Total errors   = 2.
+halsynth: Total warnings = 6.
+hal: *E,BLDSTP: Further processing stopped because of synthesizability errors.
+
+Analysis summary :
+
+ Errors   : (3)
+  AWNDEL (1)      BLDSTP (1)      CLKENF (1)     
+
+ Warnings : (64)
+  BADSYS (1)      BLKSQB (3)      CBYNAM (1)      COMBLP (1)     
+  DIFFMN (2)      EMPSTM (2)      EVTRIG (1)      IGNDLY (1)     
+  IMPDTC (9)      IMPTYP (2)      INIUSP (3)      INTTOB (8)     
+  MICAWS (1)      MULBAS (1)      NBGEND (3)      NEEDIO (1)     
+  NOBLKN (3)      POIASG (2)      RDBFAS (3)      REVROP (1)     
+  SEPLIN (1)      STYVAL (2)      TRUNCZ (9)      UELOPR (2)     
+  URDWIR (1)     
+
+ Notes    : (5)
+  ALOWID (1)      CDNOTE (2)      DECLIN (1)      PRTCNT (1)     
+
+Analysis failed.
+
+ ==========================================================================
+
+To analyze results, run following command :
+    ncbrowse -64bit -cdslib /home/student/02fe21bec035/cds.lib -sortby severity -sortby category -sortby tag hal.log
+
