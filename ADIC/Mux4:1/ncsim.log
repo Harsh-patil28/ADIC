@@ -1,0 +1,12 @@
+ncsim(64): 15.20-s086: (c) Copyright 1995-2020 Cadence Design Systems, Inc.
+
+-------------------------------------
+Relinquished control to SimVision...
+ncsim> 
+ncsim> database -open waves -into waves.shm -default
+Created default SHM database waves
+ncsim> probe -create -shm mux_test.a mux_test.sel mux_test.z
+Created probe 1
+ncsim> run
+ncsim: *W,RNQUIE: Simulation is complete.
+ncsim> 
